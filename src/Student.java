@@ -14,7 +14,17 @@ public class Student {
         return name;
     }
     public void setName(String newName) {
-        this.name = newName;
+        if (name.length() > 5) {
+            if (name.length() < 62) {
+                this.name = newName;
+            }
+            else {
+                System.out.print("Je naam heeft te veel karakters");
+            }
+        }
+        else {
+            System.out.print("Je naam heeft te weinig karakters. ");
+        }
     }
     public int getHistoryExamPoints() {
         return historyExamPoints;
@@ -27,6 +37,11 @@ public class Student {
     }
     public void setGroup(char newGroup) {
         this.group = newGroup;
+    }
+    public void printReport() {
+        System.out.println("de naam van de student is " + name + ".");
+        System.out.println("zijn punten op zijn geschiedenisexamen zijn " + historyExamPoints + " punten.");
+        System.out.println("zijn klasgroep is " + group + ".");
     }
 }
 
