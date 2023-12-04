@@ -32,7 +32,7 @@ public class Child {
     }
 
     public static void main(String[] args) {
-        Child child = new Child("Kjento", 9);
+        Child child = new Child("thibeau", 9);
         System.out.println("Naam: " + child.getName());
         System.out.println("Leeftijd: " + child.getAge());
         child.setName("Robbie");
